@@ -6,7 +6,7 @@ repository: Git repository where your resume will be hosted, only required if yo
 version: 2
 
 # Personal info
-name: Zane Liu
+name: Zane Liu(刘子义)
 title: 测试开发
 email: lzy291980138@163.com
 # email_title: Email (Email title override)
@@ -20,13 +20,13 @@ darkmode: false
 
 # Social links
 #twitter_username: jekyllrb
-github_username:  LemonLzy
+github_username: LemonLzy
 #stackoverflow_username: "00000001"
 #dribbble_username: jekyll
 #facebook_username: jekyll
 #flickr_username: jekyll
 #instagram_username: jekyll
-linkedin_username: jekyll
+#linkedin_username: jekyll
 #xing_username: jekyll
 #pinterest_username: jekyll
 #youtube_username: jekyll
@@ -52,13 +52,18 @@ additional_links:
 # google_analytics: "UA-00000000-0"
 
 # About Section
-# about_title: About Me (Use this to override about section title)
+about_title: Technology
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Write an awesome description about yourself here, this supports markdown, so you can add [links](http://foobar.com) and highlight things <mark>like this</mark>.
-
+  - 测试专业度：熟悉 Kafka，熟悉其底层存储，生产者与消费者设计原理。 
+  - 后端：主 Python，熟悉web编程; 熟悉 Golang，能够快速学习、接受新的编程语言。
+  - 接口：熟练划分微服务分层，熟悉 DDD 设计，有鉴权、限流、日志收集、监控、链路追踪等微服务治理 的项目经验。
+  - 前端：熟悉 Vue，有 Web 前端项目开发经验。
+  - 数据库：精通 MySQL，熟悉其基础架构、索引结构及 SQL 优化;有使用 MongoDB，ElasticSearch 的 经验。
+  - 容器化：了解K8S与Docker，了解其基础结构底层原理，有容器化服务的编写、部署经验。 
+  - 网络：熟悉 Linux 网络编程，熟悉 TCP/IP 协议。
 content:
-  - title: Projects # Title for the section
+  - title: Personal Projects # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: left
@@ -70,10 +75,15 @@ content:
           - title: flora脚手架
             icon: fab fa-github
             url: https://github.com/LemonLzy/flora
-        quote: >
-          Short overview of the project (optional)
+#        quote: >
+#          基于Go语言的命令行工具
         description: | # this will include new lines to allow paragraphs
-          Description about the work on/with the project
+          - 项目简介：基于Go语言的命令行工具
+          - 项目功能：
+            - 文件重命名：指定文件夹下，批量替换需要移除的文件名
+            - chatgpt：将个人微信变为chatgpt对话机器人
+            - JSON格式化：将一行形式的JSON字符串格式化
+          - 项目难点:
       - layout: left
         border: weak  # Value of `weak` will display a weak border below this item. # Any
         # other value (or no value) means no border will be displayed
@@ -89,44 +99,83 @@ content:
         quote: >
           Short overview of the project (optional)
         description: | # this will include new lines to allow paragraphs
-          Description about the work on/with the project
+          - 项目简介：基于Go和Vue的博客页面
+          - 项目功能：
+          - 项目难点:
+      - layout: left
+        title: crab
+        link_text: A simple blog by golang and vue.
+        additional_links:
+          - title: 防水墙验证码
+            icon: fab fa-github
+            url: https://github.com/LemonLzy/crab
+#        quote: >
+#          Short overview of the project (optional)
+        description: | # this will include new lines to allow paragraphs
+          - 项目简介：基于open_cv的滑动防水墙解决方案
+          - 项目功能：
+          - 项目难点:
   - title: Experience
     layout: list
     content:
       - layout: left
-        title: Futu
+        border: weak  # Value of `weak` will display a weak border below this item. # Any
+        title: 富途
         sub_title: 系统测试
         caption: 2021.01 - now
-        quote: >
-          Short description of the company (optional)
+#        quote: >
+#          腾讯战略投资，纳斯达克上市公司富途 (Nasdaq: FUTU) 旗下子公司
         description: | # this will include new lines to allow paragraphs
-          Description of role
+          ##### 业务测试
+          - 开户合规测试组负责人，负责所有券商的开户、合规业务的管理、任务分配、需求测试、规范制定、团队建设
+          - 接口测试，每日监控与流水线CI落地
+          - 分层测试，单元测试、mock、code review、接口测试、系统测试
+          - 用例规范制定与review
+          
+          ##### 工具开发
+          - 工具简介：
+          - 工具职责：
+          - 工具难点
+          - 账户工具重构与开发，日均使用量：
+          
+          ##### 技术分享
+          - 重构
+          - RPC
+
       - layout: left
-        title: Aishu
+        title: 爱数
         sub_title: 软件测试
         caption: 2018.07 - 2020.12
-        quote: >
-          Short description of the company (optional)
+#        quote: >
+#          全域数据能力服务商
         description: | # this will include new lines to allow paragraphs
-          Description of role
+          ##### 业务测试
+          - 负责 KOM 系统的功能测试
+          - 使用 JMETER 对 KOM 系统核心业务编写自动化测试用例。
+
+          ##### 服务部署
+          - 负责 KOM 系统的服务部署
+          - 主导了 KOM 系统的容器化改造，基于 DOCKER、DOCKER-COMPOSE，一键编排，实现了 KOM 系统测试环境的迁移与部署。
+          - 编写 KOM 系统基于 KUBERNETES 的部署文件, 实现了基于 K8S 的集群化管理, 负责 KOM 系统环境部署文档编写。
+
   - title: Education
     layout: list
     content:
       - layout: top-middle
-        title: XTU
+        title: 湘潭大学
         sub_title: 通信工程
         caption: 2014.07 - 2018.06
         quote: >
-          Short institution or course description (optional)
-        description: | # this will include new lines to allow paragraphs
-          Description of qualification
+          CET-6
+#        description: | # this will include new lines to allow paragraphs
+#          Description of qualification
   - title: A Little More About Me
     layout: text
     content: | # this will include new lines to allow paragraphs
-      This is where you can write a little more about yourself. You could title this section **Interests** and include some of your other interests.
-
-      Or you could title it **Skills** and write a bit more about things that make you more desirable, like *leadership* or *teamwork*
-
+      - 技术能力：积累了内容领域的业务实践与经验，热爱工具开发，乐于总结和分享。 
+      - 项目能力：以交付为目的的 OWNER 意识;除了从 0 到 1 的能力外，也会思考设计的稳定性、扩展性。 
+      - 沟通能力：INFJ，擅⻓共情与换位思考，技术思维产品化表达，努力做有大局观意识的主动者。 
+      - 管理能力：担任过实习生、新人 Mentor，培养其达到独立承担子项目。
 # Footer
 footer_show_references: true
 # references_title: References on request (Override references text)
